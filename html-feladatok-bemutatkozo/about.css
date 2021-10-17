@@ -1,0 +1,23 @@
+section {
+    text-align: center;
+}
+
+.section-div {
+    display: inline-table;
+    text-align: left;
+    margin: 60px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+img {
+    width: 500px;
+}

@@ -1,0 +1,33 @@
+h1 {
+    margin: 30px 10px 90px;
+    text-align: center;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.work-img {
+    display: inline;
+    width: 600px;
+}
+
+.work {
+    display: inline;
+    margin: 0;
+    width: 600px;
+}
+
+@media screen and (min-width: 1000px) {
+    .work-container {
+        flex-direction: row;        
+    }
+    
+    .work {
+        display: inline;
+        margin: 0 70px 0 70px;
+        width: auto;
+    }
+}

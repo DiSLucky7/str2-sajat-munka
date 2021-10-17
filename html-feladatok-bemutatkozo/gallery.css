@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+    border-radius: 8px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+}
+
+.gallery:hover {
+    width: 31%;
+    height: 31%;
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 7px 20px, rgba(0, 0, 0, 1) 0px 7px 20px;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .img-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .gallery {
+            width: 30%;
+    }
+}
