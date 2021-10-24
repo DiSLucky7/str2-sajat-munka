@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet"></head>
+
+<body>
+    <header class="header--dark">
+        <h3 class="header__title">Admin Page</h3>
+        <div class="header__search">
+            <div class="header--right">
+                <input type="text" class="search__input " value="Search for...">
+                <button class="search__btn"><i class="fa fa-search fa-lg"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li class="nav__li nav__header"><span> CORE</span></li>
+                    <li class="nav__li"><i class="fa fa-tachometer"></i><span> Dashboard</span></li>
+                    <li class="nav__li nav__header"><span>INTERFACE</span></li>
+                    <li class="nav__li li--arrow"><div><i class="fa fa-windows"></i><span> Layouts</span></div><i class="fa fa-angle-right"></i></li>
+                    <li class="nav__li li--arrow"><div><i class="fa fa-bookmark"></i><span> Pages</span></div><i class="fa fa-angle-right"></i></li>
+                    <li class="nav__li nav__header"><span>ADDONS</span></li>
+                    <li class="nav__li"><i class="fa fa-area-chart"></i><span> Charts</span></li>
+                    <li class="nav__li"><i class="fa fa-table"></i><span> Tables</span></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">
+                Dashboard
+            </div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">Primary Card</div>
+                    <div class="card__bottom">View Details<i class="fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">Warning Card</div>
+                    <div class="card__bottom">View Details<i class="fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">Success Card</div>
+                    <div class="card__bottom">View Details<i class="fa fa-angle-right"></i></div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">Danger Card</div>
+                    <div class="card__bottom">View Details<i class="fa fa-angle-right"></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

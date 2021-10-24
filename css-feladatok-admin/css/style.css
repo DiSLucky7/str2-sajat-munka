@@ -1,0 +1,215 @@
+.header--dark {
+    background-color: rgb(51,57,64);
+    color: rgb(236,236,236);
+    display: flex;
+    padding: 0 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search {
+    display: inline;
+}
+
+.header__title {
+    display: inline;
+    font-size: 1.25em;    
+}
+
+.search__input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0.375em 0.75em;
+    font-size: 1.2em;
+    transition: color 0.15s;   
+    color: #888;    
+    border: unset;
+    position: relative;
+}
+
+.search__input:hover {
+    border: 1px solid;
+    border-color: rgb(128,189,255);
+}
+
+.search__btn {
+    background-color: rgb(0,123,255);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    width: 3.4em;
+}
+
+.main__nav {
+    background-color: rgb(33,37,41);
+    display: inline-block;
+    height: 93vh;
+    width: 12em;
+}
+
+.main__breadcrumb {
+    background-color: rgb(233,236,239);
+    border-radius: 0.25em;
+    padding: 1em 1.5em;
+    color: #888;
+    margin: 0.5em 0em;
+}
+
+.card__top {
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    padding: 2em;
+    color: white;
+    border-bottom: 2px solid rgba(100, 100, 100, 0.2);
+}
+
+.card__bottom {
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    padding: 1em 2.2em;
+    color: white;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__top:hover {
+    background-color: rgba(100, 100, 100, 0.2);
+    transition: background-color 0.3s;
+}
+
+.card__bottom:hover {
+    background-color: rgba(100, 100, 100, 0.2);
+    transition: color 0.3s;
+}
+
+.main__card--blue {
+    background-color: rgb(0,123,255);
+}
+
+.main__card--yellow {
+    background-color: rgb(255,193,7);
+}
+
+.main__card--green {
+    background-color: rgb(40,167,69);
+}
+
+.main__card--red {
+    background-color: rgb(220,53,69);
+}
+
+/*SAJÁT*/
+
+html, body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__title {    
+    font-weight: 400;
+}
+
+
+.nav__ul {
+    margin: 0px;
+    list-style-type: none;    
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.nav__li {
+    margin: 1.5em 0;
+    color: #aaa;
+}
+
+.nav__li:active:not(.nav__header), .nav__li:hover:not(.nav__header) {
+    color: white
+}
+
+.header--right {
+    display: inline-flex;
+    justify-content: right;
+}
+
+.nav__header {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 0.75em;
+    color: #888;
+    margin: 0.5em 0;
+}
+
+
+i {
+    margin: 0.3em;
+}
+
+.fa-search {
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 99em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.main__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__card {
+    margin: 0.75em 0em;
+    border-radius: 4px;
+    width: 23.5%;
+}
+
+.li--arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1em;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .main__nav {
+        width: 5em;
+    }
+    span {
+        display: none;
+    }
+    .main__cards {
+        flex-direction: column;
+    }
+    .main__card {
+        width: auto;
+    }
+}
