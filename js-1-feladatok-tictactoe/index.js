@@ -38,6 +38,7 @@ const initState = () => {
             matrix[i][k] = 0;
         }
     }
+    stepCount = 0;
 }
 
 
@@ -93,7 +94,7 @@ majd kattintásra (esemény) eltávolítja a handleClick függvényt.
 const modifyCell = (element) => {
     console.log(element);
     element.textContent = mark;
-    // element.removeClickListener('click', handleClick);
+    element.removeEventListener('click', handleClick);
 }
 
 /**
@@ -198,6 +199,8 @@ const checkWinner = () => {
     */
 if ( checkValues(matrix) || checkColumnValues() || checkDiagonalValues()) {
     endGame();
+   } else if (stepCount === 9) {
+        setMessage('Draw. Click on Start!')
    }
 
 }
@@ -242,6 +245,7 @@ Ezután a függvény meghívja a removeAllClickListeners() nevű függvényt.
 */
 const endGame = () => {
     setMessage('The winner is Player ' + (mark === 'X' ? 'O' : 'X') + '.');
+    removeAllClickListeners();
 }
 
 /*
@@ -261,8 +265,14 @@ const newGame = () => {
     - setMessage('Playing...')
     - setMark()
     */
-    button.addEventListener('click', () => initState(), addClickListener(), deleteSigns(), setMessage('Playing...'), setMark());
-          
+    button.addEventListener('click', () => {
+        initState();
+        addClickListener();
+        deleteSigns();
+        setMessage('Playing...');
+        setMark();
+    });
+      
 }
 
 startGame();

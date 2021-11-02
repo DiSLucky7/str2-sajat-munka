@@ -1,14 +1,23 @@
 body {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid rgb(70, 180, 255);
+    border-collapse: collapse;
     width: 200px;
     height: 200px;
     box-sizing: border-box;
     text-align: center;
     line-height: 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
 }
 
 .game__container {
@@ -16,5 +25,20 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     width: 600px;
-    border: 1px solid black;
+    border: 5px solid rgb(70, 180, 255);
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: rgb(80, 200, 255);
+    margin: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+
+.message {
+    font-size: 50px;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
