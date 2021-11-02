@@ -1,0 +1,20 @@
+body {
+    box-sizing: border-box;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200px;
+}
+
+.game__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+    border: 1px solid black;
+}
