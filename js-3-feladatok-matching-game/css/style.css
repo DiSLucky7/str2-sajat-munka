@@ -1,0 +1,120 @@
+body {
+    background-color: #33AAAA;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+h1,
+h3,
+.clock {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+}
+
+.clock {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.card {
+    background-color: transparent;
+    height: 250px;
+    width: 175px;
+    perspective: 1000px;
+}
+
+.card__inner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card__front {
+    height: 250px;
+    width: 175px;
+    background:
+        repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            #ccc 10px,
+            #ccc 20px),
+        linear-gradient(to bottom,
+            #eee,
+            #999);
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+}
+
+.card__front:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: #ddd;
+    filter: brightness(1.05);
+}
+
+.card__back {
+    height: 250px;
+    width: 175px;
+    background-color: #ddd;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    line-height: 250px;
+    font-size: 100px;
+    color: black;
+    outline: 2px solid #ccc;
+    outline-offset: -9px;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.cannot-be-clicked {
+    pointer-events: none;
+}
+
+.cannot-be-clicked-anymore {
+    pointer-events: none;
+}
+
+h3 {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+}
