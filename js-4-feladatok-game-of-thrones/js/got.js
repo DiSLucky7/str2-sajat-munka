@@ -1,6 +1,6 @@
 `use strict`
 
-const url = '../json/got.json'
+const url = './json/got.json'
 const itemsContainer = document.querySelector('.items__container')
 
 let characters;
