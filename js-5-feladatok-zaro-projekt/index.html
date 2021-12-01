@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@400;500;700&family=Shippori+Antique&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="language__buttons">
+        <button class="english" role="button"><span class="text">english</span></button>
+        <button class="hungarian" role="button"><span class="text">magyar</span></button>
+    </div>
+    <table>
+        <thead>
+            <tr></tr>
+            <tr class="input__row">
+                <th class="next__id"><div class="visibility-hidden">a</div></th>
+                <th><div class="visibility-hidden">a</div><input class="add__input" type="text" placeholder="placeholder"></th>
+                <th><div class="visibility-hidden">a</div><input class="add__input" type="text" placeholder="placeholder"></th>
+                <th><div class="visibility-hidden">a</div><input class="add__input" type="text" placeholder="placeholder"></th>
+                <th>
+                    <div class="visibility-hidden">a</div>
+                    <button class="edit__button"><i class="fa fa-save" aria-hidden="true"></i></button>
+                </th>
+                <th>
+                    <div class="visibility-hidden">a</div>
+                    <button class="delete__button"><i class="fa fa-ban" aria-hidden="true"></i></button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>

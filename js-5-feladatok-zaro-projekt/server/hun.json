@@ -1,0 +1,16 @@
+{"hun": [
+    {
+        "id": "id",
+        "name": "név",
+        "emailAddress": "e-mail cím",
+        "address": "lakcím",
+        "edit": "szerkesztés"
+    },
+    {
+        "valid": "Megfelelő adat",
+        "invalid": "Hibás adat"
+    },
+    {
+        "placeholder": "Új adatok..."
+    }
+]}

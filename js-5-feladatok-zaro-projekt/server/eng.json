@@ -1,0 +1,16 @@
+{"eng": [
+    {
+        "id": "id",
+        "name": "name",
+        "emailAddress": "e-mail address",
+        "address": "address",
+        "edit": "edit"
+    },
+    {
+        "valid": "Proper Data",
+        "invalid": "Invalid Data"
+    },
+    {
+        "placeholder": "New users's data..."
+    }
+]}

@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 60%;
+    margin-bottom: 25px;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom: 0.3rem solid #009879;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+thead {
+    background-color: #009879;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+thead>tr:last-child {
+    text-align: center;
+}
+
+thead>tr:first-child th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+thead>tr:first-child th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+th {
+    text-transform: capitalize;
+    padding: 25px 10px;
+}
+
+tbody {
+    border: thin solid rgba(85, 85, 85, 0.1);
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+td {
+    margin: 0;
+    padding: 8px 10px;
+    border-bottom: thin solid #dddddd;
+}
+
+td>div {
+    text-align: center;
+}
+
+.edit__input,
+.add__input {
+    width: 90%;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.4rem;
+    border: thin solid #bbb;
+    border-radius: 0.2rem;
+}
+
+.add__input {
+    font-size: 18px;
+}
+
+.edit__button,
+.delete__button,
+.save__button,
+.cancel__button {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #eee;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.edit__button:hover {
+    box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.delete__button:hover {
+    box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+tr:nth-child(even)>td>.delete__button,
+tr:nth-child(even)>td>.edit__button {
+    background-color: white;
+}
+
+.save__button:hover,
+.cancel__button:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.save__button {
+    background-color: rgba(0, 162, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cancel__button {
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.display-none {
+    display: none;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 14px;
+}
+
+.default__message {
+    color: black;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 14px;
+}
+
+.valid__message {
+    color: green;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 14px;
+}
+
+.invalid__message {
+    color: red;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 14px;
+}
+
+.next__id {
+    color: #777;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.invalid__input:focus {
+    outline: none !important;
+    border-color: red;
+}
+
+.valid__input:focus {
+    outline: none;
+    border-color: green;
+}
+
+
+/* LANGUAGE BUTTONS */
+.language__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+
+.language__buttons>button {
+    width: 8rem;
+    padding: 1rem;
+    margin: 0 4rem;
+    align-items: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: bold;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.english {
+    background-image: linear-gradient(155deg, blue, white, red);
+}
+
+.hungarian {
+    background-image: linear-gradient(155deg, red, white, green);
+}
+
+.language__buttons>button:active {
+    outline: 0;
+}
+
+.language__buttons>button:hover {
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.language__buttons>button span {
+    transition: all 200ms;
+}
+
+.language__buttons>button:hover span {
+    transform: scale(.95);
+    opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+    .language__buttons>button {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .language__buttons>button span {
+        line-height: 50px;
+    }
+}
