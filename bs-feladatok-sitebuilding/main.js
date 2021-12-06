@@ -4,11 +4,8 @@ if (window.innerWidth < 992) {
         window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 document.querySelector('.navbar').classList.add('bg-white');
-                // console.log('asdasd');
                 document.querySelectorAll('.navlink').forEach(elem => elem.classList.add('dark'))
                 document.querySelectorAll('.navlink').forEach(elem => elem.classList.add('hover-yellow-text'))
-                // console.log('SD');
-                // console.log(document.querySelectorAll('.navlink'));
             } else {
                 document.querySelector('.navbar').classList.remove('bg-white');
                 document.querySelectorAll('.navlink').forEach(elem => elem.classList.remove('dark'))
@@ -52,24 +49,20 @@ $('#gmail').tooltip('hide')
 $(document).ready(function () {
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
-
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-
             // Store hash
-            var hash = this.hash;
-
+            const hash = this.hash;
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
-        } // End if
+        }
     });
 });
