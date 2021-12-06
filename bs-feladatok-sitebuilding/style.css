@@ -1,0 +1,277 @@
+/* FONTS */
+@font-face {
+    font-family: 'Catamaran';
+    font-weight: 200;
+    src: url('./fonts/catamaran-v8-latin-200.woff2') format('woff2'),
+        url('./fonts/catamaran-v8-latin-200.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/lato-v20-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('./fonts/Muli/muli-webfont.woff2') format('woff2'),
+        url('./fonts/Muli/muli-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.catamaran {
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+}
+
+.lato {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.muli {
+    font-family: Muli, Helvetica, Arial, sans-serif;
+}
+
+
+
+
+body {
+    background: url("./img/bg-pattern.png"), linear-gradient(90deg, #da2431, #7a4397);
+    letter-spacing: 0.2rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+}
+
+nav:hover {
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.new-age {
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+span {
+    letter-spacing: 2px;
+}
+
+.yellow {
+    color: #fdcc52;
+}
+
+
+.hover-white:hover {
+    color: white;
+}
+
+.hover-yellow {
+    transition: border-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.hover-yellow:hover {
+    background-color: #fdcc52;
+    border-color: #fdcc52;    
+}
+
+.hover-yellow-text:hover {
+    color: #fdcc52 !important;
+}
+
+.dark {
+    color: #777 !important;
+}
+
+.light {
+    color: lightgray;
+}
+
+.rounded-border {
+    border-radius: 40px;
+}
+
+.mobile-container {
+    position: relative;
+}
+
+.demo-screen {
+    position: absolute;
+    width: 80%;
+}
+
+.jumbotron {
+    background-color: #fdcc52;
+    padding: 10rem 0;
+    margin-bottom: 0;
+}
+
+.badge>img {
+    width: 13rem;
+    padding: 0;
+}
+
+.letter-spacing-0 {
+    letter-spacing: normal;
+}
+
+/* CARS */
+.cards {
+    background-color: white;
+}
+
+.card {
+    width: 20rem;
+    border: none;
+}
+
+.card-text {
+    color: gray;
+}
+
+.simple-line-icon {
+    border-bottom: 5px solid black;
+    border-image-slice: 1;
+}
+
+.border-gradient {
+    border-image: linear-gradient(to right, #da2431, #7a4397);
+}
+
+.simple-line-icon {
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-width: thin;
+    background: linear-gradient(to right, #da2431, #7a4397);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+    border-image-source: linear-gradient(to right, #da2431, #7a4397);
+}
+
+hr {
+    width: 7rem;
+    border-color: #ccc;
+}
+
+/* BUILDING */
+.building {
+    background-image: url(./img/bg-cta.jpg);
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    background-size: cover;
+}
+
+/* LOVE FRIENDS */
+.love {
+    height: 20rem;
+    background-color: #fdcc52;
+}
+
+.twitter-icon {
+    font-size: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgba(29, 161, 242, 0.9);
+    border-radius: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.twitter-icon:hover {
+    background-color: rgb(29, 161, 249);
+}
+
+.fb-icon {
+    font-size: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgba(66, 103, 178, 0.9);
+    border-radius: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.fb-icon:hover {
+    background-color: rgb(66, 103, 179);
+}
+
+.email-icon {
+    font-size: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgba(219, 68, 55, 0.9);
+    border-radius: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.email-icon:hover {
+    background-color: rgb(219, 68, 55);
+}
+
+/* FOOTER */
+footer {
+    height: 5rem;
+    background-color: #222;
+    color: #666;
+    text-align: center;
+    
+}
+
+.footer-row {
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #fdcc52;
+}
+
+.display-2 {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+    .new-age {
+        height: 90vh;
+    }
+
+    h1 {
+        font-size: 3.1rem;
+    }
+
+    .building {
+        height: 50rem;
+    }
+
+    .display-2 {
+        font-size: 5.5rem;
+    }
+}
