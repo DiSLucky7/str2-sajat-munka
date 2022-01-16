@@ -1,5 +1,6 @@
 'use strict'
 
+
 // -----CARDS-----
 const container = document.querySelector('.cards__container');
 let cards;
@@ -37,6 +38,10 @@ function generatingCards() {
     cards = document.querySelectorAll('.card')
 }
 generatingCards();
+
+const audio = new Audio('/assets/Tribute.mp3');
+audio.play();
+
 
 // Add and remove classes.
 const addClass = (element, className) => {

@@ -1,0 +1,65 @@
+@mixin generate-margins() {
+    @for $i from 0 through 10 {
+        .m-scss-#{$i} {
+            margin: $i * 0.5 +rem;
+        }
+
+        .mx-scss-#{$i} {
+            margin: 0 $i * 0.5 +rem;
+        }
+
+        .my-scss-#{$i} {
+            margin: $i * 0.5 +rem 0;
+        }
+
+        .mt-scss-#{$i} {
+            margin-top: $i * 0.5 +rem;
+        }
+
+        .mb-scss-#{$i} {
+            margin-bottom: $i * 0.5 +rem;
+        }
+
+        .ml-scss-#{$i} {
+            margin-left: $i * 0.5 +rem;
+        }
+
+        .mr-scss-#{$i} {
+            margin-right: $i * 0.5 +rem;
+        }
+    }
+}
+
+@mixin generate-paddings() {
+    @for $i from 0 through 10 {
+        .p-scss-#{$i} {
+            padding: $i * 0.5 +rem;
+        }
+
+        .px-scss-#{$i} {
+            padding: 0 $i * 0.5 +rem;
+        }
+
+        .py-scss-#{$i} {
+            padding: $i * 0.5 +rem 0;
+        }
+
+        .pt-scss-#{$i} {
+            padding-top: $i * 0.5 +rem;
+        }
+
+        .pb-scss-#{$i} {
+            padding-bottom: $i * 0.5 +rem;
+        }
+
+        .pl-scss-#{$i} {
+            padding-left: $i * 0.5 +rem;
+        }
+
+        .pr-scss-#{$i} {
+            padding-right: $i * 0.5 +rem;
+        }
+
+    }
+}
+

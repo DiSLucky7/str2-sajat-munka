@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+  }
+  
+  .nav-scss {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  
+    &__container {
+      align-items: flex-start;      
+      display: flex;
+      flex-direction: row-reverse;
+      padding: .8rem;
+      width: 90%;
+  
+      @media screen and (min-width: 992px) {
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 992px;
+      }
+    }
+  
+      &__start-bootstrap {
+        color: #fdcc52;
+        margin-top: 0.5rem;
+        margin-right: auto;
+  
+        &:hover {
+          color: #ffffff;
+      }
+    }
+  
+    &__list {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      width: auto;
+  
+      @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            width: auto;
+      }
+    }
+  
+    &__item {
+      text-align: center;
+      width: auto;
+    }
+  
+    &__link {
+      color: #bdbdbd;
+      display: block;
+      line-height: 1rem;
+      padding: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  
+    &__hamburger{
+      &-checkbox {
+          display: none;
+      
+          &:checked + .nav-scss__list {
+              display: flex;
+            }
+      }
+  
+      &-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: .2rem 1rem;
+        border:#bdbdbd solid 2px;
+        border-radius: .5rem;
+  
+        @media screen and (min-width: 992px) {
+          display: none;
+      }
+      }
+  
+      &-label {
+          align-items: center;
+          cursor: pointer;
+          display: flex;
+          flex-wrap: wrap;
+          height: 1.5rem;
+          padding: 0.75rem;
+          width: 1.5rem;
+      }
+  
+      &-line {
+          background: #222;
+          display: block;
+          height: 2px;
+          width: 1.5rem;
+      }
+    }
+  }
+  
+  .white-bg {
+    background-color: #ffffff;  
+    box-shadow: 0 0 10px #aaa;
+  
+    .nav__container {
+      ul {
+        li {
+          a {
+            color: #666666;
+          }
+  
+          a:hover {
+            color:#fdcc52;
+          }
+        }
+      }
+  
+      p {
+        color: #666666;
+      }
+  
+      p:hover {
+        color:#fdcc52;
+      }
+    }
+  }
+  
+  div>.footer-link:hover {
+    color:#fdcc52;
+  }

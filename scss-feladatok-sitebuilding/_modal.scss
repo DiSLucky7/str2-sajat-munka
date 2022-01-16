@@ -1,0 +1,93 @@
+.modal__container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-scss {
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px;
+  transition: opacity 0.7s;
+}
+
+.modal-scss:focus {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+h2, p {
+  margin: 30px 50px;
+  line-height: 1.6
+}
+
+.x__button__container {
+  display: flex;
+  justify-content: right;
+}
+
+.x__button {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin: 10px;
+  font-size: 34px;
+  border: 0;
+  background-color: white;
+  color: #aaa;
+}
+
+.x__button:hover {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 1rem;
+
+}
+
+
+.cancel__button, .okay__button {
+  border: 0;
+  width: 100px;
+  height: 50px;
+}
+
+.okay__button {
+  background-color: lightgreen;
+  margin-top: 15px;
+}
+
+.cancel__button {
+  background-color: rgb(255, 80, 80);
+  margin: 15px 50px 50px 10px;
+}
+
+.okay__button:hover {
+  background-color: rgb(104, 255, 104);
+}
+
+.cancel__button:hover {
+  background-color: rgb(255, 50, 50);
+}
+
+@media screen and (min-width: 560px) {
+  .modal-scss {
+      width: 50%;
+  }
+}

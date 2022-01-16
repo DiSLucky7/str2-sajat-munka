@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Catamaran';
+    font-weight: 200;
+    src: url('./fonts/catamaran-v8-latin-200.woff2') format('woff2'),
+        url('./fonts/catamaran-v8-latin-200.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/lato-v20-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('./fonts/Muli/muli-webfont.woff2') format('woff2'),
+        url('./fonts/Muli/muli-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.catamaran {
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+}
+
+.lato {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.muli {
+    font-family: Muli, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.small-scss {
+    font-size: small;
+}
+
+.display-4-scss {
+    font-size: 3.5rem;
+}
+
+.display-3-scss {
+    font-size: 4rem;
+}
+
+.display-2-scss {
+    font-size: 5rem;
+}
+
+.font-weight-normal-scss {
+    font-weight: normal;
+}
+
+.lead-scss {
+    font-size: 1.25rem;
+}
+
+.letter-spacing-0-scss {
+    letter-spacing: 0;
+}
+
+.font-weight-light-scss {
+    font-weight: lighter;
+}
